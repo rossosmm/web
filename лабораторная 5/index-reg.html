@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mian.css">
+    <link rel="stylesheet" href="./fount.css">
+    <title>Registrashin page</title>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.svg" alt="">
+        <div class="right_bar">
+            <label for="enter">
+                <img src="./img/i-user.svg" alt="">
+                <a href="#" id="enter">Войти</a>
+            </label>
+            <a href="#">Зарегистрироваться</a>
+        </div>
+    </header>
+    <main>
+        <h1>Регистриция</h1>
+            <form action="" method="post" class="regForm">
+                <div class="row">
+                    <div class="left">
+                        <label for="NamePeople">Имя</label>
+                        <input type="text" id="NamePeople">
+                    </div>
+                    <div class="right">
+                        <label for="SurnamePeople">Фамилия</label>
+                        <input type="text" id="SurnamePeople">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <label for="UserName">Логин*</label>
+                        <input class="valid" type="text" id="UserName" required>
+                        <span class="Errors_log">
+                            <div><span></span>Только буквы, цифры и символы @.+-_</div>
+                            <div><span></span>Не более 150 символов</div>
+                        </span>                        
+                    </div>
+                    <div class="right">
+                        <label for="EmailAdres">E-mail</label>
+                        <input type="email" id="EmailAdres">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <label for="PS">Пароль*</label>
+                        <input class="valid" type="password" id="PS" required>
+                        <span class="Errors_pas">
+                            <div><span></span>Минимум 8 символов</div>
+                            <div><span></span>Не может состоять только из цифр</div>
+                            <div><span></span>Не должен совпадать с логином</div>
+                        </span>   
+                    </div>
+                    <div class="right">
+                        <label for="PS2">Подтвердите пароль*</label>
+                        <input class="valid" type="password" id="PS1" required>
+                        <span class="Errors_pas1">
+                            <div><span></span>Пароли не совпадают</div>
+                        </span>  
+                    </div>
+                </div>
+                <div class="row btn">
+                    <div class="checked">
+                        <label for="ChekedBox">Даю своё согласие на обработку персональных данных</label>
+                        <input type="checkbox" id="ChekedBox" checked>
+                    </div>
+                    <button type="submit">Зарегистрироваться</button>
+                </div>
+            </form>
+    </main>
+    <footer>
+        <div class="left_foot">
+            <a href="#">Об авторе</a>
+            <a href="#">Технологии</a>
+        </div>
+        <div class="right_foot">
+            © Blog, 2022
+        </div>
+    </footer>  
+    <script src="./errors chech.js"></script> 
+</body>
+</html>

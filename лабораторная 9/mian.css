@@ -1,0 +1,265 @@
+body,
+body *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    background: #F3F3F3;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid;
+}
+
+a:hover{
+    border: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #624C91;
+    padding: 15px 60px;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-right: 28px;
+}
+
+.right_bar{
+    display: flex;
+    align-items: center;
+}
+
+.right_bar *{
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px 62px 60px;
+}
+
+.left_foot *{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #366AF3; 
+    margin-right: 40px;
+}
+
+.right_foot{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #999999;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 60px;
+    gap: 40px;
+}
+
+main>h1{
+    font-weight: 777;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+}
+
+main>form{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.row{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.row label{
+    width: fit-content;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(17, 34, 68, 0.5);
+    margin-bottom: 4px;
+}
+
+.row div,
+div>input{
+    width: 100%;
+}
+
+div>input{
+    display: flex;
+    padding: 24px 0px 24px 24px;
+    gap: 10px;
+    border: 1px solid rgba(17, 34, 68, 0.5);
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #112244;
+}
+
+#ChekedBox{
+    width: fit-content;
+}
+
+.checked{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    gap: 8px;
+}
+
+.checked>label{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #222222;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+}
+
+.rowbtn>button{
+    display: flex;
+    width: fit-content;
+    padding: 20px 40px;
+    gap: 10px;
+    background: #624C90;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.rowbtn>button:disabled{
+    background: #CCCCCC;
+}
+.rowbtn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row>div>span>div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0px 0px 24px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+/*Добавление записи*/
+
+textarea{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: 232px;
+    padding: 24px;
+    gap: 10px;
+    border: 1px solid rgba(17, 34, 68, 0.5);
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #112244;
+}
+
+.select{
+    flex-direction: column;
+    gap: 0px;
+}
+
+.select select{
+    padding: 24px 48px 24px 24px;
+    gap: 10px;
+    isolation: isolate;
+
+    border: 1px solid rgba(17, 34, 68, 0.5);
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #112244;
+}
+
+.IMG{
+    width: fit-content;
+}
+
+.IMG>label{
+    gap: 0px;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #624C90;
+    margin-right: 8px;
+    border: 1px solid #624C90;
+    border-radius: 7px;
+}
+
+.labelNameFile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 40px;
+}
+
+.progres{
+    width: 99%;
+    height: 3px;
+}
+
+.inProgress{
+    width: 0;
+    height: 100%;
+    background: #3CA255;
+}
+
+.IMG>input{
+    width: fit-content;
+    display: none;
+}
+
+.showIMG{
+    display: flex;
+}
+
+.showIMG>img{
+    max-width: 300px;
+}
+

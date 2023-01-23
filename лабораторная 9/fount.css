@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Golos Text VF; 
+    src: url(./Golos-Text_VF.ttf); 
+}
+
+@font-face {
+    font-family: Golos UI VF; 
+    src: url(./Golos-UI_VF.ttf); 
+}
+
+body,
+body *{
+    font-family: Golos Text VF;
+}

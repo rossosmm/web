@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+        background-color: #0f0f0f;
+      }
+
+      input {
+        box-sizing: border-box;
+        padding: 10px;
+        margin-bottom: 20px;
+        height: 35px;
+        width: 200px;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 480px;
+        margin-top: 150px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: white;
+      }
+
+      li span {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <ul>
+        <li>
+          <input type="tel" rel="phone" placeholder="+7" />
+          <span>+70123456789</span>
+        </li>
+        <li>
+          <input type="tel" rel="phone" placeholder="+7" />
+          <span>80123456789</span>
+        </li>
+        <li>
+          <input type="tel" rel="phone" placeholder="+7" />
+          <span>0123456789</span>
+        </li>
+        <li>
+          <input type="text" placeholder="NOT PHONE" />
+          <span>Любая строка</span>
+        </li>
+      </ul>
+    </div>
+
+    <script src="rel.js"></script>
+  </body>
+</html>

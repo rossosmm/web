@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./avtor.css">
+    <link rel="stylesheet" href="./fount.css">
+    <title>Main Avtor lab7</title>
+</head>
+<body>
+    <div id="app">
+    <header>
+        <img src="./img/logo.svg" alt="">
+        <div class="right_bar">
+            <label for="enter">
+                <img src="./img/i-user.svg" alt="">
+                <a href="#" id="enter">Войти</a>
+            </label>
+            <a href="#">Зарегистрироваться</a>
+        </div>
+    </header>
+    <div class="overlayAuth">
+        <div class="mWin">
+            <div class="header_mWin">
+                <div class="drag-zone">
+                    Вход
+                </div>
+                    <img id="closeIcon" src="./img/Close Icon.svg" alt="">
+            </div>
+            <form action="" method="post" class="form_mWin">
+                <label for="login">Логин</label>
+                    <input type="text" name="Login" id="login">
+                <label for="Password">Пароль</label>
+                    <input type="password" name="pass" id="Password">
+                <div class="btn_block_mWin">
+                    <button>Войти</button>
+                    <button>Забыли пароль?</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <main>
+        <div class="Main">
+            <div class="publisher_btn">
+                <div class="pubulich_list">
+                        <div v-for="pdata1 in SortPdata" class="post">
+                            <img v-bind:src="pdata1.image" alt="">
+                            <div class="infoPost">
+                                <div>
+                                    <div class="name">{{pdata1.title}}</div>
+                                    <div class="smallText">{{pdata1.intro}}</div>
+                                </div>
+                                <div class="lb">
+                                    <span v-for="leibl in pdata1.labels">{{leibl}}</span>
+                                </div>
+                            </div>
+                     </div>                    
+             </div>
+                    <div class="row-btn">
+                        <button>Загрузить ещё 6</button>
+                    </div>              
+         </div>
+            <div class="auvtor">
+                <h2 v-html="Avtor"></h2>
+                <a href="#" v-html="Login"></a>
+                <div class="sb">
+                    <span>Подписчики: <span v-html="Subscrib"></span></span>
+                    <span>Подписки: <span v-html="Sign"></span></span>
+                </div>
+                <div class="nt">Записей: <span v-html="Note"></span></div>
+                <select id="SelectAvtor" v-model="SelectAvtor">
+                    <option value="elementary">Все посты</option>
+                </select>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="left_foot">
+            <a href="#">Об авторе</a>
+            <a href="#">Технологии</a>
+        </div>
+        <div class="right_foot">
+            © Blog, 2022
+        </div>
+    </footer>
+    </div>
+    <script src="./vue.min.js"></script>
+    <script src="./MainInfo.js"></script>
+    <script src="./vue.js"></script>
+    <!-- <script src="./mian.js"></script> -->
+</body>
+</html>

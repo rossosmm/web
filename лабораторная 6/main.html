@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./fount.css">
+    <title>Main Auth lab6</title>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.svg" alt="">
+        <div class="right_bar">
+            <label for="enter">
+                <img src="./img/i-user.svg" alt="">
+                <a href="#" id="enter">Войти</a>
+            </label>
+            <a href="#">Зарегистрироваться</a>
+        </div>
+    </header>
+    <div class="overlayAuth">
+        <div class="mWin">
+            <div class="header_mWin">
+                <div class="drag-zone">
+                    Вход
+                </div>
+                    <img id="closeIcon" src="./img/Close Icon.svg" alt="">
+            </div>
+            <form action="" method="post" class="form_mWin">
+                <label for="login">Логин</label>
+                    <input type="text" name="Login" id="login">
+                <label for="Password">Пароль</label>
+                    <input type="password" name="pass" id="Password">
+                <div class="btn_block_mWin">
+                    <button>Войти</button>
+                    <button>Забыли пароль?</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <main>
+        <h1>Последние публикации</h1>
+        <div class="Main">
+            <div class="publisher_btn">
+                <div class="pubulich_list">
+                    <div class="row">
+                        <div class="post">
+                            <img src="./img/post-1.png" alt="">
+                            <div class="infoPost">
+                                <div>
+                                    <div class="name">Работа с Git в Visual Studio Code</div>
+                                    <div class="smallText">Один из способов работать с Гитом.</div>
+                                </div>
+                                <div class="lb">
+                                    <span>Git</span>
+                                    <span>Консоль</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="./img/post-2.png" alt="">
+                            <div class="infoPost">
+                                <div>
+                                    <div class="name">Adobe покупают Фигму. Всё пропало?</div>
+                                    <div class="smallText">Не факт, но есть разные мнения.</div>
+                                </div>
+                                <div class="lb">
+                                    <span>Figma</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="post">
+                            <img src="./img/post-3.png" alt="">
+                            <div class="infoPost">
+                                <div>
+                                    <div class="name">Все научились программировать. А дальше-то что?</div>
+                                    <div class="smallText">Ученье - свет.</div>
+                                </div>
+                                <div class="lb">
+                                    <span>Обучение</span>
+                                    <span>Карьера</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="./img/post-4.png" alt="">
+                            <div class="infoPost">
+                                <div>
+                                    <div class="name">Мне тяжело учиться, кто поможет?</div>
+                                    <div class="smallText">Попали в патовую ситуацию? Тогда кликайте на статью.</div>
+                                </div>
+                                <div class="lb">
+                                    <span>Обучение</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="post">
+                            <img src="./img/post-5.png" alt="">
+                            <div class="infoPost">
+                                <div>
+                                    <div class="name">Ключевые навыки фронтендеров в 2022</div>
+                                    <div class="smallText">Ежегодное исследование рынка от HTML Academy.</div>
+                                </div>
+                                <div class="lb">
+                                    <span>Обучение</span>
+                                    <span>Карьера</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="./img/post-6.png" alt="">
+                            <div class="infoPost">
+                                <div>
+                                    <div class="name">Фронтенд-новости</div>
+                                    <div class="smallText">WAI-ARIA, новинки HTML-форм и 12 ошибок любого джаваскриптера.</div>
+                                </div>
+                                <div class="lb">
+                                    <span>Новости</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-btn">
+                    <button>Загрузить ещё 6</button>
+                </div>              
+            </div>
+            <div class="rubrics">
+                <h4>Рубрики</h4>
+                <a href="#" class="rubric">Обучение</a>
+                <a href="#" class="rubric">Карьера</a>
+                <a href="#" class="rubric">Figma</a>
+                <a href="#" class="rubric">Консоль</a>
+                <a href="#" class="rubric">Git</a>
+                <a href="#" class="rubric">Новости</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="left_foot">
+            <a href="#">Об авторе</a>
+            <a href="#">Технологии</a>
+        </div>
+        <div class="right_foot">
+            © Blog, 2022
+        </div>
+    </footer>
+
+    <script src="./mian.js"></script>
+</body>
+</html>

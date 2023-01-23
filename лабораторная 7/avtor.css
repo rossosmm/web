@@ -1,0 +1,57 @@
+.Main{
+    flex-direction: row-reverse;
+}
+
+
+.auvtor{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0px 12px 20px;
+    gap: 20px;
+}
+
+
+.auvtor h2{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.auvtor>a{
+    width: fit-content;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #366AF3;
+}
+
+.sb{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.nt, select{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.auvtor select{
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 170px;
+    border: none;
+}
+
+.auvtor option{
+    font-size: 12px;
+    font-weight: 500;
+}

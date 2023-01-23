@@ -1,0 +1,150 @@
+body,
+body *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid;
+}
+
+a:hover{
+    border: none;
+}
+img{
+    width: 100%;
+}
+
+header{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.logotip_store{
+    width: 100%;
+}
+
+header a{
+    color: black;
+}
+
+header>div:last-child{
+    display: flex;
+    gap: 20px;
+    font-size: 28px;
+}
+
+main{
+    padding: 12px;
+}
+
+h1{
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(0,0,0,0.11);
+    background: #fff;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.11);
+    border-radius: 3px;
+}
+
+.item:hover img{
+    opacity: .4;
+}
+
+.drop{
+    padding: 40px 20px 0 20px;
+}
+
+.info_iteam{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+    margin-bottom: 40px;
+}
+.cost{
+    align-self: flex-end;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.name{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.main-catalog{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.promo-catalog{
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+h2{
+    width: 100%;
+    font-size: 30px;
+}
+.promo-catalog>.item{
+    width: 48%;
+}
+
+@media screen and (min-width: 1200px) {
+    header{
+        padding: 24px;
+        flex-direction: unset;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logotip_store{
+        width: 400px;
+    }
+
+    main{
+        padding: 24px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    h2{
+        font-size: 46px;
+    }
+    
+    .main-catalog{
+        flex-direction: unset;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    .item{
+        width: 32%;
+    }
+
+    .promo-catalog{
+        margin-top: 40px;
+        gap: 24px;
+        justify-content: space-between;
+    }
+
+    .promo-catalog>.item{
+        width: 23%;
+    }
+}

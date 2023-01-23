@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mian.css">
+    <link rel="stylesheet" href="./fount.css">
+    <title>Registrashin page</title>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.svg" alt="">
+        <div class="right_bar">
+            <label for="enter">
+                <img src="./img/i-user.svg" alt="">
+                <a href="#" id="enter">Войти</a>
+            </label>
+            <a href="#">Зарегистрироваться</a>
+        </div>
+    </header>
+    <main>
+        <h1>Добавить запись</h1>
+            <form action="" method="post" class="postForm">
+                <div class="row">
+                    <div class="left">
+                        <label for="Titel">Заголовок</label>
+                        <input type="text" id="Titel" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <label for="TextAr">Текст</label>
+                        <textarea id="TextAr"></textarea>                      
+                    </div>
+                </div>
+                <div class="row select">
+                    <label for="SelectCategory">Выберите категорию</label>
+                    <select id="SelectCategory">
+                        <option value="none">Без категории</option>
+                        <option value="Git">Git</option>
+                        <option value="Figma">Figma</option>
+                    </select>
+                </div>
+                <div class="row btn">
+                    <div class="IMG">
+                        <label for="ImgPost"> <img src="./img/paperclip.svg" alt=""> Прикрепить файл изображения</label>
+                        <input type="file" id="ImgPost" multiple accept="image/*">
+                    </div>
+                    <button type="submit">Опубликовать</button>
+                </div>
+            </form>
+    </main>
+    <footer>
+        <div class="left_foot">
+            <a href="#">Об авторе</a>
+            <a href="#">Технологии</a>
+        </div>
+        <div class="right_foot">
+            © Blog, 2022
+        </div>
+    </footer>   
+</body>
+</html>
